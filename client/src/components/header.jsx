@@ -30,9 +30,9 @@ export function Header() {
           <Logo />
         </Link>
         <Navigation className={nav} />
-        <Link to="/search" className={searchButton}>
+        {/* <Link to="/search" className={searchButton}>
           <SearchIcon />
-        </Link>
+        </Link> */}
         <CartButton quantity={quantity} />
       </header>
       <Toast show={loading || didJustAddToCart}>

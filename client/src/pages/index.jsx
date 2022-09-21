@@ -6,6 +6,7 @@ import { ProductListing } from "../components/product-listing"
 import { Seo } from "../components/seo"
 import {
   container,
+  featured,
   intro,
   callOut,
   callToAction,
@@ -22,9 +23,9 @@ export const query = graphql`
 `
 function Hero (props) {
   return (
-    <div className={container}>
-      <h1 className={intro}>Kiyoi Living</h1>
-      <p className={callToAction}>Your premier source of Kombucha</p>
+    <div>
+      <h2 className={intro}>Kiyoi</h2>
+      <p>Your premier source of Kombucha</p>
     </div>
   )
 }
@@ -34,7 +35,7 @@ export default function IndexPage({ data }) {
     <Layout>
       <Main />
       <Hero />
-      <section className={container}>
+      <section className={featured}>
         <h1 className={callOut}>Featured Products</h1>
         <ProductListing products={data?.shopifyCollection?.products} />
       </section>

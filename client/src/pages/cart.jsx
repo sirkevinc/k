@@ -37,12 +37,11 @@ export default function CartPage() {
           <div className={emptyStateContainer}>
             <h1 className={emptyStateHeading}>Your cart is empty</h1>
             <p>
-              Looks like you haven’t found anything yet. We understand that
-              sometimes it’s hard to choose — maybe this helps:
+              Looks like you haven’t found anything yet
             </p>
-            <Link to="/search?s=BEST_SELLING" className={emptyStateLink}>
+            {/* <Link to="/search?s=BEST_SELLING" className={emptyStateLink}>
               View trending products
-            </Link>
+            </Link> */}
           </div>
         ) : (
           <>

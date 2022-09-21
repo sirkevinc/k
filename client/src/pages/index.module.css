@@ -34,3 +34,10 @@
   letter-spacing: var(--tight);
   color: var(--text-color-secondary);
 }
+
+.featured {
+  padding-left: var(--size-gutter-raw);
+  padding-right: var(--size-gutter-raw);
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-3xl);
+}

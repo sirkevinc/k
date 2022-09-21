@@ -7,7 +7,6 @@ import { MoreButton } from "../../components/more-button"
 import { title } from "./index.module.css"
 
 export default function Products({ data: { products } }) {
-  console.log("HKJSL", products)
   return (
     <Layout>
       <h1 className={title}>Products</h1>
